@@ -10,7 +10,7 @@ int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 int Sum (int a, int b)
 {
-    if (b == 1) return 1;
-    return b + Sum(a, b - 1);
+    if (a == b) return b;
+    else return a + Sum(a + 1, b);
 }
 Console.WriteLine(Sum(firstNumber, secondNumber));
